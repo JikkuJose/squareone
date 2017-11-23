@@ -7,7 +7,7 @@ function ScrollerExample() {
   return (
     <ScrollArea
       className="bg-washed-yellow ba b--black-10 br3"
-      height={15}
+      height={20}
       width={20}
     >
       <div className="sans-serif f7 pv3 lh-copy">
