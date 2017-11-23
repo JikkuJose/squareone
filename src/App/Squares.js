@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
-import NestedContainer from "core/NestedContainer"
-import Chain from "animations/Chain"
+import NestedContainer from "../core/NestedContainer"
+import Chain from "../animations/Chain"
 
 function Sqaures() {
   return (

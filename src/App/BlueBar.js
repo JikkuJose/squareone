@@ -1,12 +1,12 @@
 import React from "react"
 import styled from "styled-components"
 
-import NavBar from "library/NavBar"
-import Bicycle from "icons/Bicycle"
+import NavBar from "../library/NavBar"
+import Bicycle from "../icons/Bicycle"
 
-import Shake from "animations/Shake"
-import Drag from "animations/Drag"
-import Aux from "core/Aux"
+import Shake from "../animations/Shake"
+import Drag from "../animations/Drag"
+import Aux from "../core/Aux"
 
 function BlueBar() {
   return (
@@ -30,4 +30,6 @@ export default BlueBar
 
 const Title = styled.div.attrs({
   className: "ml2 f4 pa1 avenir ttu tracked",
-})``
+})`
+
+`

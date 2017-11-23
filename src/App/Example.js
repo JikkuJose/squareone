@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
-import NestedContainer from "core/NestedContainer"
-import ColorizeOnHover from "animations/ColorizeOnHover"
+import NestedContainer from "../core/NestedContainer"
+import ColorizeOnHover from "../animations/ColorizeOnHover"
 import { transparentize } from "polished"
 
 class Example extends React.Component {
@@ -14,16 +14,10 @@ class Example extends React.Component {
           to={transparentize(0.6, "blue")}
           className="pa3 br2 pointer"
         >
-          <Title>
-            {title}
-          </Title>
+          <Title>{title}</Title>
         </ColorizeOnHover>
-        <Meta>
-          {meta}
-        </Meta>
-        <Snippet>
-          {snippet}
-        </Snippet>
+        <Meta>{meta}</Meta>
+        <Snippet>{snippet}</Snippet>
       </NestedContainer>
     )
   }
@@ -33,15 +27,21 @@ export default Example
 
 const Title = styled.div.attrs({
   className: "satisfy lh-title f1",
-})``
+})`
+
+`
 
 const Meta = styled.div.attrs({
   className: "mv4 montserrat ttu black-60 f6",
-})``
+})`
+
+`
 
 const Snippet = styled.div.attrs({
   className: "open-sans f4 lh-copy black-70",
-})``
+})`
+
+`
 
 const title = "Styled Components for Sanity!"
 

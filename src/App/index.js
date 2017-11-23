@@ -1,13 +1,13 @@
-import React, { Component } from "react"
+import React from "react"
 import util from "lodash/util"
 
-import SiteWrapper from "core/SiteWrapper"
+import SiteWrapper from "../core/SiteWrapper"
 
 import Example from "./Example"
 import BlueBar from "./BlueBar"
 import Squares from "./Squares"
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <SiteWrapper>
