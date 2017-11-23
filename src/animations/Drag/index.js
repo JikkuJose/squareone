@@ -1,5 +1,6 @@
 import React from "react"
 import Animated from "animated/lib/targets/react-dom"
+import PropTypes from "prop-types"
 
 import xyPan from "./xyPan"
 
@@ -37,4 +38,10 @@ Drag.defaultProps = {
   },
   constrainX: false,
   constrainY: false,
+}
+
+Drag.propTypes = {
+  startPosition: PropTypes.object,
+  constrainX: PropTypes.bool,
+  constrainY: PropTypes.bool,
 }

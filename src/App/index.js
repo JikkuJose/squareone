@@ -6,14 +6,14 @@ import SiteWrapper from "../core/SiteWrapper"
 import Example from "./Example"
 import BlueBar from "./BlueBar"
 import Squares from "./Squares"
+import Flipper from "./Flipper"
+import ScrollerExample from "./ScrollerExample"
 
 class App extends React.Component {
   render() {
     return (
       <SiteWrapper>
-        <BlueBar />
-        <Squares />
-        {util.times(3, i => <Example key={i} />)}
+        <ScrollerExample />
       </SiteWrapper>
     )
   }

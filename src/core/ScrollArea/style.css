@@ -1,0 +1,14 @@
+.squareone-scrollarea::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.squareone-scrollarea::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+}
+
+.squareone-scrollarea::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
