@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import PropTypes from "prop-types"
 
 import "./style.css"
 
@@ -9,7 +10,9 @@ function ScrollArea(props) {
   return (
     <Wrapper {...props}>
       <Container width={props.width - scrollBarWidth}>
-        <Content>{props.children}</Content>
+        <Content>
+          {props.children}
+        </Content>
       </Container>
     </Wrapper>
   )
@@ -18,7 +21,13 @@ function ScrollArea(props) {
 export default ScrollArea
 
 ScrollArea.defaultProps = {
-  width: 6,
+  width: 10,
+  height: 10,
+}
+
+ScrollArea.propTypes = {
+  width: PropTypes.number,
+  height: PropTypes.number,
 }
 
 const Wrapper = styled.div.attrs({
