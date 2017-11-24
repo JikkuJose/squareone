@@ -1,12 +1,15 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react"
+import styled from "styled-components"
 
-import { contentWidth } from '../config'
+import { contentWidth } from "../config"
 
 export default function NestedContainer(props) {
-  return(
+  return (
     <Wrapper {...props}>
-      <Container className={props.innerClassName} contentWidth={props.contentWidth || contentWidth}>
+      <Container
+        className={props.innerClassName}
+        contentWidth={props.contentWidth || contentWidth}
+      >
         {props.children}
       </Container>
     </Wrapper>
@@ -14,16 +17,16 @@ export default function NestedContainer(props) {
 }
 
 const Wrapper = styled.div.attrs({
-  className: ''
+  className: "",
 })`
-  ${p => p.css}
+  ${p => p.css};
 `
 
 const Container = styled.div.attrs({
-  className: 'w-100'
+  className: "w-100",
 })`
   padding-left: 5%;
   padding-right: 5%;
   max-width: ${p => p.contentWidth}rem;
-  ${p => p.innerCss}
+  ${p => p.innerCss};
 `

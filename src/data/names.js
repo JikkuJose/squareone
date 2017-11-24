@@ -1,8 +1,1 @@
-export const names = [
-  'Jikku',
-  'Tim',
-  'Steve',
-  'Elon',
-  'Nikhil',
-  'Rakesh'
-]
+export const names = ["Jikku", "Tim", "Steve", "Elon", "Nikhil", "Rakesh"]
