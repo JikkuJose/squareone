@@ -2,15 +2,11 @@ import React from "react"
 import styled from "styled-components"
 import PropTypes from "prop-types"
 
-import "./style.css"
-
-const scrollBarWidth = 1
-
 function ScrollArea(props) {
   return (
     <Wrapper {...props}>
-      <Container width={props.width - scrollBarWidth}>
-        <Content>
+      <Container width={props.width - props.horizontalPadding}>
+        <Content leftOffset={props.horizontalPadding}>
           {props.children}
         </Content>
       </Container>
@@ -23,15 +19,17 @@ export default ScrollArea
 ScrollArea.defaultProps = {
   width: 10,
   height: 10,
+  horizontalPadding: 1,
 }
 
 ScrollArea.propTypes = {
   width: PropTypes.number,
   height: PropTypes.number,
+  horizontalPadding: PropTypes.number,
 }
 
 const Wrapper = styled.div.attrs({
-  className: "absolute squareone-scrollarea flex",
+  className: "absolute flex",
 })`
   width: ${p => p.width}rem;
   height: ${p => p.height}rem;
@@ -53,5 +51,5 @@ const Container = styled.div.attrs({
 const Content = styled.div.attrs({
   className: "",
 })`
-  padding-left: 1rem;
+  padding-left: ${p => p.leftOffset}rem;
 `
