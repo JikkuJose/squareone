@@ -1,14 +1,15 @@
 import React from "react"
 import styled from "styled-components"
 
-import ScrollArea from "../core/ScrollArea"
+import ScrollArea from "core/ScrollArea"
 
 function ScrollerExample() {
   return (
     <ScrollArea
-      className="bg-washed-yellow ba b--black-10 br3"
+      className="bg-blue ba b--black-10 sb-reset sb-black-20 br3 sb-br3 sb-thin"
       height={20}
-      width={20}
+      width={15}
+      horizontalPadding={2}
     >
       <div className="sans-serif f7 pv3 lh-copy">
         It is a long established fact that a reader will be distracted by the
