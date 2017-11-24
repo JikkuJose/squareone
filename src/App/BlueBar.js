@@ -17,9 +17,7 @@ function BlueBar() {
           <Shake className="pointer">
             <Bicycle scale={0.8} color="#FFF" />
           </Shake>
-          <Drag className="move" startPosition={{ x: 50, y: 18 }}>
-            <Title>Standard Template</Title>
-          </Drag>
+          <Title>Square One</Title>
         </Aux>
       }
     />

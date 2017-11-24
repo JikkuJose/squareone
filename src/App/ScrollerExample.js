@@ -6,7 +6,7 @@ import ScrollArea from "core/ScrollArea"
 function ScrollerExample() {
   return (
     <ScrollArea
-      className="bg-blue ba b--black-10 sb-reset sb-black-20 br3 sb-br3 sb-thin"
+      className="ba b--black-10 sb-reset sb-black-20 sb-thin"
       height={20}
       width={15}
       horizontalPadding={2}
