@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
-
-import NestedContainer from "../core/NestedContainer"
-import ColorizeOnHover from "../animations/ColorizeOnHover"
 import { transparentize } from "polished"
+
+import NestedContainer from "core/NestedContainer"
+import ColorizeOnHover from "animations/ColorizeOnHover"
 
 class Example extends React.Component {
   render() {
