@@ -29,7 +29,7 @@ ScrollArea.propTypes = {
 }
 
 const Wrapper = styled.div.attrs({
-  className: "absolute flex",
+  className: "",
 })`
   width: ${p => p.width}rem;
   height: ${p => p.height}rem;
