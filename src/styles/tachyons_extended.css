@@ -61,23 +61,35 @@
   cursor: not-allowed;
 }
 
-.sb-white-20::-webkit-scrollbar-thumb,
-.sb-white-20::-webkit-scrollbar-track {
+.sb_track-white-20::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.20);
 }
 
-.sb-white-10::-webkit-scrollbar-thumb,
-.sb-white-10::-webkit-scrollbar-track {
+.sb_thumb-white-20::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.20);
+}
+
+.sb_track-white-10::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.10);
 }
 
-.sb-black-20::-webkit-scrollbar-thumb,
-.sb-black-20::-webkit-scrollbar-track {
+.sb_thumb-white-10::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.10);
+}
+
+.sb_track-black-20::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.20);
 }
 
-.sb-black-10::-webkit-scrollbar-thumb,
-.sb-black-10::-webkit-scrollbar-track {
+.sb_thumb-black-20::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.20);
+}
+
+.sb_track-black-10::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.10);
+}
+
+.sb_thumb-black-10::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.10);
 }
 
